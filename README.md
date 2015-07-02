@@ -47,7 +47,7 @@ Place pc.sh in your home directory
 
 Make pc.sh executible
 
-chmod +x ps.sh
+chmod +x pc.sh
 
 You can now start paycoind and the database should begin to fill up
 
