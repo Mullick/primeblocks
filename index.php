@@ -47,7 +47,7 @@
                 </div>
 		<?php
 		   $dbLink = mysql_connect('localhost', 'YOURMYSQLUSERNAME', 'YOURMYSQLPASSWORD');
-		   mysql_select_db('primeblockstest', $dbLink);
+		   mysql_select_db('primeblocks', $dbLink);
 		   $sql = "SELECT ID, Height, TXID, Pubkey, Stake_Rate, Key_Number, Output, Address FROM blocksnew ORDER BY ID DESC LIMIT 1000";
 		   $result = mysql_query($sql) or die(mysql_error());
 		?>
@@ -76,14 +76,11 @@
 	    </div>
         </div>        
     <div class = "navbar navbar-default navbar-fixed-bottom">
-
-            <div class= "container">
-                <p class = "navbar-text pull-left">Built By Mullick And Cryptsy Staff</p>
-                <a href = "https://www.cryptsy.com/" class = "navbar-btn btn-primary btn pull-right">Cryptsy</a>
-            </div>
+        <div class= "container">
+            <p class = "navbar-text pull-left">Built By Mullick And Cryptsy Staff</p>
+            <a href = "https://www.cryptsy.com/" class = "navbar-btn btn-primary btn pull-right">Cryptsy</a>
         </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
     </body>
-
-
 </html>
