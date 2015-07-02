@@ -9,10 +9,15 @@ Installation:
 Build dooglus's modified paycoind
 
   git clone https://github.com/dooglus/paycoin
+  
   cd paycoin/
+  
   git checkout pcstakenotify
+  
   cd src/
+  
   make -f makefile.unix
+  
   sudo mv paycoind /usr/bin
   
 Create a mysql database named primeblocks then a table with the following schema
