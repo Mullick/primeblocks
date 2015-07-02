@@ -9,30 +9,11 @@ Installation:
 Build dooglus's modified paycoind
 
   git clone https://github.com/dooglus/paycoin
-  
   cd paycoin/
-  
   git checkout pcstakenotify
-  
   cd src/
-  
   make -f makefile.unix
-  
   sudo mv paycoind /usr/bin
-  
-paycoin.conf:
-
-  server=1
-  
-  daemon=1
-  
-  rpcuser=YOURUSERNAMEHERE
-  
-  rpcpassword=YOURPASSWORDHERE
-  
-  pcstakenotify=/home/YOURUSERNAMEHERE/pc.sh %p %i %t %c %h
-  
-DO NOT START PAYCOIND YET
   
 Create a mysql database named primeblocks then a table with the following schema
  
@@ -48,6 +29,8 @@ Place pc.sh in your home directory
 Make pc.sh executible
 
 chmod +x pc.sh
+
+Place paycoin.conf in your paycoin datadirectory. Make sure to change the RPC username and password as well as the path to pc.sh
 
 You can now start paycoind and the database should begin to fill up
 
